@@ -1,9 +1,7 @@
 function downloadCV() {
-    // Remplacez l'URL par le lien vers votre CV
     window.open('cv.pdf', '_blank');
 }
 
-// Ajouter une animation simple
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.project-card');
     cards.forEach(card => {
@@ -17,13 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Fonction d'animation au chargement de la page
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     const projects = document.querySelectorAll('.project-card');
     const buttons = document.querySelectorAll('.buttons button, .buttons .btn');
 
-    // Animation du header
     header.style.opacity = '0';
     header.style.transform = 'translateY(-50px)';
     setTimeout(() => {
@@ -32,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         header.style.transform = 'translateY(0)';
     }, 100);
 
-    // Animation des boutons
     buttons.forEach((button, index) => {
         button.style.opacity = '0';
         button.style.transform = 'scale(0.9)';
@@ -43,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 200);
     });
 
-    // Animation des cartes projet
     projects.forEach((card, index) => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(30px)';
